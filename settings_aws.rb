@@ -14,7 +14,7 @@ module SettingsAws
   AWS_KEY_PEMPATH = "/home/$USER/keypair.pem"
   AWS_UBUNTU_AMI = "ami-39501209"
   AWS_REGION = "sa-east-1"
-  AWS_TYPE_INS = "t2.micro"
+  AWS_TYPE_INS = "t3.small"
   AWS_DEVICE_SIZE = 8
   AWS_DEVICE_NAME = "/dev/sda1"
   AWS_DEVICE_VOL_TYPE = "gp2"
