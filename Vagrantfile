@@ -8,15 +8,16 @@ Vagrant.configure('2') do |config|
         aws_config = YAML::load_file(File.join(Dir.home, ".aws_secrets"))
         aws.access_key_id = aws_config.fetch("access_key_id")
         aws.secret_access_key = aws_config.fetch("secret_access_key")
-        aws.keypair_name = 'vagrantAWS-key'
-        aws.instance_type = "t2.micro"
+        aws.keypair_name = 'awsng-lel'
+        aws.instance_type = "t3.small"
+#       aws.instance_type = "t2.micro"
 #       aws.keypair_name = aws_config.fetch("keypair_name")
         aws.region = 'us-east-1'
-        aws.ami = 'ami-0394fe9914b475c53'
+        aws.ami = 'ami-005b7876121b7244d'
 #       aws.security_groups = 'sg-08ce8ddb34a878eaf'
 #       aws.security_groups = 'vagrant'
 #       aws.security_groups = ['default']
-        aws.subnet_id = 'subnet-0708d9c83404b507c'
+        aws.subnet_id = 'subnet-0017cc53f521dfb23'
         aws.tags = {
           'Name'=> "vagrantAWS-Data1"
         }
