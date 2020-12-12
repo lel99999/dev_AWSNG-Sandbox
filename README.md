@@ -1,4 +1,4 @@
-# dev_vagrantAWS
+# dev_AWSNG-Sandbox-vagrant
 Vagrant deployment to AWS Workspace
 
 #### Requires vagrant-aws plugin
